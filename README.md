@@ -1,6 +1,13 @@
 # fastcampusJavaBeginner
-chapter01-03: studies repository <br/>
-chapter04-: here<br/>
+__Fastcampus JAVA/SPRING강의 내용정리(chapter01~03은 studies repository에)__
 
-자바관련된 내용은 최대한 여기에 넣을 에정. <br/>
-spring으로 넘어가는 경우 새로만듦.
+주로 java project 내용을 넣을 예정. 
+
+***
+
+__사용한 기술__   
+JAVA
+
+***
+
+
