@@ -1,4 +1,4 @@
-package fastcampusJava.chapter04.ch02;
+package fastcampus.javaSpring.chapter04.ch02;
 
 public class EqualTest {
 

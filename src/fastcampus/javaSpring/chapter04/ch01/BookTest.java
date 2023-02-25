@@ -1,4 +1,4 @@
-package fastcampusJava.chapter04.ch01;
+package fastcampus.javaSpring.chapter04.ch01;
 
 class Book {
 	private String title;

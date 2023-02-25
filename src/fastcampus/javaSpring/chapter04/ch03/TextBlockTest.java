@@ -1,4 +1,4 @@
-package fastcampusJava.chapter04.ch03;
+package fastcampus.javaSpring.chapter04.ch03;
 
 public class TextBlockTest {
 
