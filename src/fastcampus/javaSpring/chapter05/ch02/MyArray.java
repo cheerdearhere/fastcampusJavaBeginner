@@ -3,6 +3,7 @@ package fastcampus.javaSpring.chapter05.ch02;
 public class MyArray {
 	int[] intArr; //int array
 	int count; //array.size
+	String m="";//print array
 	
 	public int ARRAY_SIZE;
 	public static final int ERROR_NUM = -999999999;
@@ -84,13 +85,16 @@ public class MyArray {
 		}
 		return intArr[position];
 	}
+
 	public void printAll() {
 		if(count==0) {
 			System.out.println("출력할 내용이 없습니다.");
 			return;
 		}
+		m = "My array: ";
 		for(int i=0;i<count;i++) {
-			System.out.println(intArr[i]);
+			m+=intArr[i]+"/";
 		}
+		System.out.println(m);
 	}
 }
