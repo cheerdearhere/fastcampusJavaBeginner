@@ -5,7 +5,7 @@ public class MyListNode {
 	public MyListNode next;//다음 노드의 address(링크)
 	
 //constructor
-	//default	
+	//default
 	//data 
 	//link and data 
 //get data
