@@ -6,8 +6,20 @@ public class MyListNode {
 	
 //constructor
 	//default
+	public MyListNode() {
+		data=null;
+		next=null;
+	}
 	//data 
-	//link and data 
+	public MyListNode(String data) {
+		this.data=data;
+		next=null;
+	}
+	//link and data
+	public MyListNode(String data, MyListNode next) {
+		this.data=data;
+		this.next=next;
+	}
 //get data
 	public String getData() {
 		return data;

@@ -6,10 +6,75 @@ public class MyLinkedList {
 	String m=new String("");
 	
 	//default constructor
+	public MyLinkedList() {
+		head=null;
+		count=0;
+	}
 	//add
+	public MyListNode addElement(String data) {
+		MyListNode newNode;
+		if(head==null) {
+			newNode=new MyListNode(data);
+			head=newNode;
+		}
+		else {
+			newNode = new MyListNode(data);
+			MyListNode tempNode = head;
+			while(tempNode.next!=null) {
+				tempNode=tempNode.next;
+			}
+			tempNode.next=newNode;
+		}
+		count++;
+		return newNode;
+	}
 	//insert
+	public MyListNode insertElement(int position,String data) {
+		int i;
+		MyListNode tempNode=head;
+		MyListNode preNode=null;
+		MyListNode newNode=new MyListNode(data);
+		if(position<0||position>count) {
+			System.out.println("Error: index number");
+			return null;
+		}
+		if(position==0) {
+			newNode.next=head;
+			head=newNode;
+		}
+		else {
+			for(i=0;i<position;i++) {
+				preNode=tempNode;
+				tempNode=tempNode.next;
+			}
+			newNode.next=preNode.next;
+			preNode.next=newNode;
+		}
+		count++;
+		return newNode;
+	}
 	//삭제: previous node와의 연결을 끊고 previous node와 next node를 연결 
-
+	public MyListNode removeElement(int position) {
+		int i;
+		MyListNode preNode =null;
+		MyListNode tempNode=head;
+		if(position<0||position>count) {
+			System.out.println("Error: index number");
+			return null;
+		}
+		if(position==0) {
+			head=tempNode.next;
+		}
+		else {
+			for(i=0;i<position;i++) {
+				preNode=tempNode;
+				tempNode=preNode.next;
+			}
+			preNode.next=tempNode.next;
+		}
+		count--;
+		return tempNode;
+	}
 	//get data
 	public String getElement(int index) {
 		int i;
