@@ -1,4 +1,4 @@
-package playground;
+package codewars;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
