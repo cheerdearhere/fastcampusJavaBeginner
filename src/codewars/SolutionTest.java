@@ -19,6 +19,10 @@ public class SolutionTest {
 	}
 	public static void assertEquals(int[] res, int[] test) {
 		boolean check;
+		if(res.length!=test.length) {
+			System.out.println("size dosen't equals.");
+			return;
+		}
 		for(int i=0;i<test.length;i++) {
 			check=res[i]==test[i];
 			if(check) 
