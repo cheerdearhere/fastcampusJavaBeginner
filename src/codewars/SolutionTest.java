@@ -1,5 +1,11 @@
 package codewars;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
 public class SolutionTest {
 	public static void assertEquals(String res, String test) {
 		if(res.equals(test)) System.out.println("return true");
@@ -31,6 +37,23 @@ public class SolutionTest {
 				System.out.println(i+" false: "+res[i]+"/"+test[i]);
 		}
 		System.out.println("-----");
+	}
+	public static void assertIterableEquals(List<String> l1,List<String> l2) {
+		if(l1==null) {
+			System.out.println("list is null");
+			return;
+		}
+		if(l1.size()!=l2.size()) {
+			System.out.println("list size isn't same.");
+			return;
+		}
+		for(int i = 0;i<l1.size();i++) {
+			String s1 = l1.get(i);
+			if(s1.equals(l2.get(i))) 
+				System.out.println(i+" true");
+			else 
+				System.out.println(i+" false");
+		}
 	}
 //specially
 	public static void assertNull(String messege,Object re) {
