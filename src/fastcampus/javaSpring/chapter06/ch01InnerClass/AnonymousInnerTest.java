@@ -1,4 +1,4 @@
-package fastcampus.javaSpring.chapter06.innerClass;
+package fastcampus.javaSpring.chapter06.ch01InnerClass;
 class Outer2{
 	int outNum = 100;
 	static int sNum = 200;

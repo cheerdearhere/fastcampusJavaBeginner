@@ -1,4 +1,4 @@
-package fastcampus.javaSpring.chapter06.innerClass;
+package fastcampus.javaSpring.chapter06.ch01InnerClass;
 
 class OutClass{
 	private int num=10;
