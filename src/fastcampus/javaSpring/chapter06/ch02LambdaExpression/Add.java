@@ -1,4 +1,4 @@
-package fastcampus.javaSpring.chapter06.ch02LamdaExpression;
+package fastcampus.javaSpring.chapter06.ch02LambdaExpression;
 
 @FunctionalInterface
 public interface Add {
