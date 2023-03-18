@@ -34,6 +34,22 @@ public class SolutionTest {
 		}
 		System.out.println("-----");
 	}
+	public static void assertEquals(double[] res, double[] test) {
+		boolean check;
+		if(res.length!=test.length) {
+			System.out.println("size dosen't equals.");
+			return;
+		}
+		for(int i=0;i<test.length;i++) {
+			check=res[i]==test[i];
+			if(check) 
+				System.out.println(i+" true");
+			else 
+				System.out.println(i+" false: "+res[i]+"/"+test[i]);
+		}
+		System.out.println("-----");
+	}
+
 	public static void assertIterableEquals(List<String> l1,List<String> l2) {
 		if(l1==null) {
 			System.out.println("list is null");
