@@ -1,0 +1,12 @@
+3월 20, 2023 4:28:18 오후 fastcampus.javaSpring.chapter06.ch11LoggerClass.MyLogger log
+WARNING: log test
+3월 20, 2023 4:28:18 오후 fastcampus.javaSpring.chapter06.ch11LoggerClass.MyLogger log
+SEVERE: log test
+3월 20, 2023 8:06:43 오후 fastcampus.javaSpring.chapter06.ch11LoggerClass.MyLogger warning
+WARNING: name must not be null
+3월 20, 2023 8:06:43 오후 fastcampus.javaSpring.chapter06.ch11LoggerClass.MyLogger warning
+WARNING: name is too long to use
+3월 20, 2023 8:11:08 오후 fastcampus.javaSpring.chapter06.ch11LoggerClass.MyLogger warning
+WARNING: name must not be null
+3월 20, 2023 8:11:08 오후 fastcampus.javaSpring.chapter06.ch11LoggerClass.MyLogger warning
+WARNING: name is too long to use

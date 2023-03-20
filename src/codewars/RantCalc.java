@@ -46,15 +46,11 @@ public class RantCalc {
 	//switch-case문
 	 public static int rentalCarCost3(int d) {
 		    int x = 40;
-		   
 		    switch (d) {
-		    
 		      case 0: case 1: case 2:
 		      return d * x;
-		    
 		      case 3: case 4: case 5: case 6:
 		      return (x * d) - 20;    
-		  
 		      default: return (x * d) - 50;
 		    }
 		  }
