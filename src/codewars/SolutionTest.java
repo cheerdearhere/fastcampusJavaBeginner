@@ -5,24 +5,24 @@ import java.util.List;
 public class SolutionTest {
 	public static void assertEquals(String res, String test) {
 		if(res.equals(test)) System.out.println("return true");
-		else System.out.println("return false");
+		else System.out.println(res);
 	}
 	public static void assertEquals(boolean res, boolean test) {
 		if(res==test) System.out.println("return true");
-		else System.out.println("return false");
+		else System.out.println(res);
 	}
 	public static void assertEquals(int res, int test) {
 		if(res==test)System.out.println("return true");
-		else System.out.println("return false");
+		else System.out.println(res);
 	}
 	public static void assertEquals(double res, double test) {
 		if(res==test)System.out.println("return true");
-		else System.out.println("return false");
+		else System.out.println(res);
 	}
 	public static void assertEquals(int[] res, int[] test) {
 		boolean check;
 		if(res.length!=test.length) {
-			System.out.println("size dosen't equals.");
+			System.out.println("size dosen't equals: "+res);
 			return;
 		}
 		for(int i=0;i<test.length;i++) {
@@ -37,7 +37,7 @@ public class SolutionTest {
 	public static void assertEquals(double[] res, double[] test) {
 		boolean check;
 		if(res.length!=test.length) {
-			System.out.println("size dosen't equals.");
+			System.out.println("size dosen't equals: "+res);
 			return;
 		}
 		for(int i=0;i<test.length;i++) {
@@ -56,7 +56,7 @@ public class SolutionTest {
 			return;
 		}
 		if(l1.size()!=l2.size()) {
-			System.out.println("list size isn't same.");
+			System.out.println("list size isn't same");
 			return;
 		}
 		for(int i = 0;i<l1.size();i++) {
